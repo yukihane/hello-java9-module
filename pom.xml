@@ -14,4 +14,19 @@
     <maven.compiler.source>1.9</maven.compiler.source>
     <maven.compiler.target>1.9</maven.compiler.target>
   </properties>
+
+  <modules>
+    <module>hello-java9-module-module</module>
+    <module>hello-java9-module-main</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.github.yukihane.hello-java9-module</groupId>
+        <artifactId>hello-java9-module-module</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 </project>
